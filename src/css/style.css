@@ -1,0 +1,73 @@
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1em;
+  padding: 1em;
+  max-width: 60em;
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: .1em;
+}
+
+.post .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.post .head .profile-img {
+  margin: 0 1em 0 0;
+  border-radius: 999em;
+  width: 5em;
+  height: 5em;
+}
+
+.post .head .name * {
+  margin: 0;
+}
+
+.post .head .name .tagline {
+  color: #444;
+  font-size: 1.1em;
+}
+
+.post .foot .like-button-v, .post .foot .like-button-j {
+  color: darkred;
+  text-decoration: none;
+  outline: none;
+}
+
+.post .foot .like-button-v:hover, .post .foot .like-button-j:hover {
+  color: #a00;
+}
+
+.post .foot .like-button-v:hover .like-icon, .post .foot .like-button-j:hover .like-icon {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.post .foot .like-button-v:active, .post .foot .like-button-j:active {
+  color: #a00;
+}
+
+.post .foot .like-button-v:active .like-icon, .post .foot .like-button-j:active .like-icon {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.post .foot .like-button-v .like-icon, .post .foot .like-button-j .like-icon {
+  -webkit-transition: .1s;
+  transition: .1s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+/*# sourceMappingURL=style.css.map */

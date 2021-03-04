@@ -1,0 +1,73 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    padding: 1em;
+
+    max-width: 60em;
+
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: .1em;
+
+    .head {
+        display: flex;
+
+        .profile-img {
+            $size: 5em;
+    
+            margin: 0 1em 0 0;
+    
+            border-radius: 999em;
+            width: $size;
+            height: $size;
+        }
+    
+        .name {
+            * {
+                margin: 0;
+            }
+
+            .tagline {
+                color: #444;
+                font-size: 1.1em;
+            }
+        }
+    }
+
+    .foot {
+        .like-button-v, .like-button-j {
+            color: darkred;
+            text-decoration: none; // Removes the underline that appears for links
+            outline: none; // Removes the occasional dotted border outline around links
+            
+            // When we hover over the button...
+            &:hover {
+                color: #a00; // Change the colour to be a little brighter
+
+                .like-icon {
+                    transform: scale(1.1); // Scale the icon up in size a little bit
+                }
+            }
+            
+            // When we are clicking down on the button...
+            &:active {
+                color: #a00; // Change the colour to still be a little brighter
+
+                .like-icon {
+                    transform: scale(1.5); // Scale the icon up in size more than the hover to emphasize a click
+                }
+            }
+
+            // Add transition for smooth changes
+            .like-icon {
+                transition: .1s; // Set the transition duration to .1 second
+                transition-timing-function: ease-out;
+            }
+        }
+    }
+}
